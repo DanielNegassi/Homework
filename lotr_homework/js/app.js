@@ -66,7 +66,7 @@ const makeMiddleEarth = () => {
       $($section).append($article);
     }
   };
-
+makeMiddleEarth();
     // COMMIT YOUR WORK
     // The commit message should read: "Chapter 1 complete - Made Middle Earth".
 
@@ -79,13 +79,22 @@ const makeMiddleEarth = () => {
 
       // 1. display an unordered list of the hobbits in the shire.
 
+
       // 2. give each hobbit a class of "hobbit"
 
       // hint: create a 'ul' outside the loop upon which to append the 'li's
 
       // hint: get 'The-Shire' by using its id
-
-    };
+      const $ul = $('<ul/>');
+      for (i=0; i < hobbits.length; i++){
+      const $li = $('<li/>');
+      $li.text(hobbits[i]);
+      $li.attr('class','hobbit');
+      $('#The-Shire').append($ul);
+      $ul.append($li);
+      }
+      };
+      makeHobbits();
 
     // COMMIT YOUR WORK
     // The commit message should read: "Chapter 2 complete - Made the Hobbits".
