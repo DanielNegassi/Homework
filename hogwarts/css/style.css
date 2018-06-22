@@ -1,0 +1,20 @@
+body {
+  background-color: #F8F7FF;
+  text-align: center;
+}
+.dog {
+  font-family: fantasy;
+}
+.secret {
+  opacity: 0.5;
+}
+ul {
+    list-style-type: none;
+  }
+table, th, td {
+    border: 1px solid gray;
+    }
+
+table{
+    margin: 0 auto;
+    }
