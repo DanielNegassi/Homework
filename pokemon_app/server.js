@@ -14,6 +14,11 @@ app.get('/pokemon', (req, res) => {
   })
 });
 
+app.get('/pokemon/:index', (req, res) => {
+ res.render('show.ejs', {
+   pokemon: Pokemon[req.params.index]
+ })
+});
 
 app.listen(PORT, () => {
   console.log('listening on port 3000');
